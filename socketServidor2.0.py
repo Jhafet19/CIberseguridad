@@ -2,7 +2,6 @@ import socket
 import hashlib
 from time import sleep
 
-
 def servidor():
 
     while True:

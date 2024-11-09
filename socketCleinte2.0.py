@@ -1,9 +1,6 @@
 import socket
 import hashlib
 def ClienteScanner():
-
-
-
     while True:
         cliente_socket = socket.socket()
         cliente_socket.connect(('127.0.0.1', 5000))
