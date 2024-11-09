@@ -37,6 +37,8 @@ def servidor():
                 
         print("Envia un mensaje al cliente")
         respuesta= input()
+
+        respuesta=sg.cifrar(respuesta,claveInt)
         cliente_socket.send(respuesta.encode())
         text = sg.obterHashHexdigest(respuesta)
 

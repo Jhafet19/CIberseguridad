@@ -9,7 +9,7 @@ def cifrar(palabra, clave):
         modulo = int(suma) % len(abc)
         aux = aux + str(abc[modulo])
 
-
+    print(f"palabra encriptada {aux}")
     return aux
 
 def desifrarCesar(palabraCifrada,clave):
@@ -19,7 +19,7 @@ def desifrarCesar(palabraCifrada,clave):
         for j in range(len(abc)):
             if palabraCifrada[i].lower() == abc[j]:
                 aux += abc[(j-clave)%26]
-
+    print(f"palabra desencriptada {aux}")
     return aux
 
 def obterHashHexdigest(mensaje):

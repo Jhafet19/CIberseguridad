@@ -31,6 +31,7 @@ def ClienteScanner():
 
         hashLocalServer = sg.obterHashHexdigest(serverMensaje)
 
+        serverMensaje = sg.desifrarCesar(serverMensaje,claveInt)
         print(f" Mensaje del servidor: {serverMensaje}")
         print(f" MensajeHash local del servidor: {hashLocalServer}")
         print(f" Mensaje hash enviado por servidor: {serverHash}")
